@@ -1,0 +1,12 @@
+C:\Users\Bruger\source\repos\DesignByContract\DesignByContract\bin\Debug\DesignByContract.exe.config
+C:\Users\Bruger\source\repos\DesignByContract\DesignByContract\bin\Debug\DesignByContract.exe
+C:\Users\Bruger\source\repos\DesignByContract\DesignByContract\bin\Debug\DesignByContract.pdb
+C:\Users\Bruger\source\repos\DesignByContract\DesignByContract\bin\Debug\DesignByContract.exe.CodeAnalysisLog.xml
+C:\Users\Bruger\source\repos\DesignByContract\DesignByContract\bin\Debug\DesignByContract.exe.lastcodeanalysissucceeded
+C:\Users\Bruger\source\repos\DesignByContract\DesignByContract\obj\Debug\ContractDesign.csprojAssemblyReference.cache
+C:\Users\Bruger\source\repos\DesignByContract\DesignByContract\obj\Debug\DesignByContract.form.resources
+C:\Users\Bruger\source\repos\DesignByContract\DesignByContract\obj\Debug\DesignByContract.Properties.Resources.resources
+C:\Users\Bruger\source\repos\DesignByContract\DesignByContract\obj\Debug\ContractDesign.csproj.GenerateResource.cache
+C:\Users\Bruger\source\repos\DesignByContract\DesignByContract\obj\Debug\ContractDesign.csproj.CoreCompileInputs.cache
+C:\Users\Bruger\source\repos\DesignByContract\DesignByContract\obj\Debug\DesignByContract.exe
+C:\Users\Bruger\source\repos\DesignByContract\DesignByContract\obj\Debug\DesignByContract.pdb
