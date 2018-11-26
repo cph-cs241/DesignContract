@@ -21,9 +21,9 @@ namespace DesignByContract
         {
             Dictionary<string, Account> Collection;
             Collection = new Dictionary<string, Account>();
-            Collection.Add("MAH",new Account("MAH" , 1000));
-            Collection.Add("SI",new Account("SI", 1000));
-            Collection.Add("IU", new Account("IU", 1000)); 
+            Collection.Add("MAH",new Account("MAH" , 1000.50));
+            Collection.Add("SI",new Account("SI", 1000.20));
+            Collection.Add("IU", new Account("IU", 1000.01)); 
             Collection.Add("OOP",new Account("OOP",  1000));
             Collection.Add("Divd",new Account("Divd", 1000));
 

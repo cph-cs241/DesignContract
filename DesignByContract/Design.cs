@@ -15,7 +15,7 @@ namespace DesignByContract
 
         private Dictionary<string, Account> Accountcollection;
         private AccountManger am = new AccountManger();
-        int number;
+        double number;
         public form()
         {
             InitializeComponent();
@@ -34,7 +34,6 @@ namespace DesignByContract
                 comboBox1.Items.Add(name);
 
             }
-
             comboBox1.SelectedIndex = 0;
 
             listView1.Clear();
@@ -48,83 +47,45 @@ namespace DesignByContract
             }
 
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonDeposit_Click(object sender, EventArgs e)
         {
             label2.Visible = false;
-
-
-            if (!string.IsNullOrEmpty(textBox1.Text) && !string.IsNullOrEmpty(comboBox1.Text) && Int32.TryParse(textBox1.Text, out number))
+            if (!string.IsNullOrEmpty(textBox1.Text) && !string.IsNullOrEmpty(comboBox1.Text) && double.TryParse(textBox1.Text, out number))
             {
 
-                int amount = Int32.Parse(textBox1.Text);
+                double amount = double.Parse(textBox1.Text);
                 if (amount >= 0)
                 {
                     string a = comboBox1.Text;
-
                     Account acount = (Account)Accountcollection[a];
                     acount.Deposit(amount);
-                    //acount.setNewAmount(amount);
-
-                    System.Diagnostics.Debug.Write("this is amouuuunt " + acount.amount);
-
                     Design_Load(sender, e);
                 }
                 else
                 {
-
                     label2.Visible = true;
                 }
 
             }
             else
             {
-
                 System.Diagnostics.Debug.Write("/N this is combobox   :  " + comboBox1.Text);
-
                 label2.Visible = true;
-
             }
-
-
         }
 
         private void buttonWithdraw_Click(object sender, EventArgs e)
         {
 
             label2.Visible = false;
-
-
-            if (!string.IsNullOrEmpty(textBox1.Text) && !string.IsNullOrEmpty(comboBox1.Text) && Int32.TryParse(textBox1.Text, out number))
+            if (!string.IsNullOrEmpty(textBox1.Text) && !string.IsNullOrEmpty(comboBox1.Text) && double.TryParse(textBox1.Text, out number))
             {
 
-                int amount = Int32.Parse(textBox1.Text);
-
+                double amount = double.Parse(textBox1.Text);
                 string a = comboBox1.Text;
-
                 Account acount = Accountcollection[a];
-
-               // int oldAount = acount.amount;
-
-                acount.Withdraw(amount);
-
-                
+                acount.Withdraw(amount);                
                 Design_Load(sender, e);
-
-                //if (amount <= oldAount)
-                //{
-                //    acount.setNewAmount(-amount);
-                //    
-                //}
-                //else
-                //{
-                //    label2.Visible = true;
-                //}
 
             }
             else

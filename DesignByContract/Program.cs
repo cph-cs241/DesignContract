@@ -16,13 +16,13 @@ namespace DesignByContract
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new form());
+           Application.Run(new form());
 
-            Account a1 = new Account("A1", 100);
-            a1.Deposit(50);
-
-            System.Diagnostics.Debug.Write("this is amouuuunt " + a1.name);
-            System.Diagnostics.Debug.Write("\nthis is amouuuunt " + a1.amount + "\n");
+          //  Account a1 = new Account("A1", 100.1);
+           // a1.Withdraw(50.9);
+           // a1.Withdraw(7);
+           // System.Diagnostics.Debug.Write("Name is : " + a1.name);
+            //System.Diagnostics.Debug.Write("\n Account is :" + a1.amount + "\n");
         }
     }
 }
