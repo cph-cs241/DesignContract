@@ -13,10 +13,10 @@ Efter installation you can se the Code Contracts Property Page in the project pr
 
 ![image](https://user-images.githubusercontent.com/20173643/49053309-f08c3b80-f1ef-11e8-8fba-bd99b681e39f.png)
 
-In this program using C#, is there account class as we have deposit and withdraw contract methods that use Code contract. Program.cs is our main class. There are 2 opportunities to run the program, through both windows application(possibility for user input from windows form) and console application(hard code).
+In the project in account class as we have deposit and withdraw contract methods that use Code contract. Program.cs is our main class. There are 2 opportunities to run the program, through both windows application(possibility for user input from windows form) and console application(hard code).
  
 
-# Requitment for use contract in C# 
+# Requitment 
 
 The classes for code contracts can be found in the System.Diagnostics.Contracts namespace.
 
@@ -24,7 +24,8 @@ The classes for code contracts can be found in the System.Diagnostics.Contracts 
 using System.Diagnostics.Contracts;
 ```
 
-# Deposit
+# Contract methodes
+. Diposit
 ```sh
 
         public void Deposit(double d)
@@ -38,7 +39,7 @@ using System.Diagnostics.Contracts;
 - express standard postconditions by using the Ensures method
 
 
-# Withdraw
+- Withdraw
 ```sh
         public void Withdraw(double d)
         {
