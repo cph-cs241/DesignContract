@@ -1,6 +1,6 @@
 # Code Contract
 
-Code contracts provide a way to specify preconditions, postconditions, and object invariants in your code. Preconditions are requirements that must be met when entering a method or property. Postconditions describe expectations at the time the method or property code exits. Object invariants describe the expected state for a class that is in a good state.
+Code contracts provide a way to specify preconditions, postconditions, and object invariants in the code. Preconditions are requirements that must be met when entering a method or property. Postconditions describe expectations at the time the method or property code exits. Object invariants describe the expected state for a class that is in a good state.
 
 - preconditions
 - postconditions
