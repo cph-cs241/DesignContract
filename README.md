@@ -8,7 +8,9 @@ Code contracts provide a way to specify preconditions, postconditions, and objec
 
 For Code Contract installation : https://marketplace.visualstudio.com/items?itemName=RiSEResearchinSoftwareEngineering.CodeContractsforNET
 
-Efter installation you might se 
+Efter installation you might se Code Contracts option in the project propertise 
+
+![image](https://user-images.githubusercontent.com/20173643/49053309-f08c3b80-f1ef-11e8-8fba-bd99b681e39f.png)
 
 In this program using C#, is there account class as we have deposit and withdraw contract methods that use Code contract. Program.cs is our main class. There are 2 opportunities to run the program, through both windows application(possibility for user input from windows form) and console application(hard code).
  
