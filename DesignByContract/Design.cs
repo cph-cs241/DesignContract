@@ -54,17 +54,12 @@ namespace DesignByContract
             {
 
                 double amount = double.Parse(textBox1.Text);
-                if (amount >= 0)
-                {
-                    string a = comboBox1.Text;
-                    Account acount = (Account)Accountcollection[a];
-                    acount.Deposit(amount);
-                    Design_Load(sender, e);
-                }
-                else
-                {
-                    label2.Visible = true;
-                }
+
+                string a = comboBox1.Text;
+                Account acount = (Account)Accountcollection[a];
+                acount.Deposit(amount);
+                Design_Load(sender, e);
+
 
             }
             else
@@ -84,7 +79,7 @@ namespace DesignByContract
                 double amount = double.Parse(textBox1.Text);
                 string a = comboBox1.Text;
                 Account acount = Accountcollection[a];
-                acount.Withdraw(amount);                
+                acount.Withdraw(amount);
                 Design_Load(sender, e);
 
             }
