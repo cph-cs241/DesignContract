@@ -25,7 +25,8 @@ using System.Diagnostics.Contracts;
 ```
 
 # Contract methodes
-. Diposit
+
+- Diposit
 ```sh
 
         public void Deposit(double d)
@@ -35,8 +36,8 @@ using System.Diagnostics.Contracts;
             amount += d;
         }
 ```
-- expresses preconditions by using the Contract.Requires method.
-- express standard postconditions by using the Ensures method
+   - expresses preconditions by using the Contract.Requires method.
+   - express standard postconditions by using the Ensures method
 
 
 - Withdraw
