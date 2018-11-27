@@ -16,10 +16,9 @@ Efter installation you can se the Code Contracts Property Page in the project pr
 In the project in account class as we have deposit and withdraw contract methods that use Code contract. Program.cs is our main class. There are 2 opportunities to run the program, through both windows application(possibility for user input from windows form) and console application(hard code).
 ```sh
 ![image](https://user-images.githubusercontent.com/20173643/49071665-c017c200-f22e-11e8-9827-de853d1bdb76.png)
-```
+
 After running this program, it must show up an exeption that we have entered in the withdraw method
 
-```sh
 ![image](https://user-images.githubusercontent.com/20173643/49072024-96ab6600-f22f-11e8-98a2-d58c119b438c.png)
 ```
 # Requitment 
