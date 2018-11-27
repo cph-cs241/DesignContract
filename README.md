@@ -8,7 +8,8 @@ Code contracts provide a way to specify preconditions, postconditions, and objec
 
 For Code Contract installation : https://marketplace.visualstudio.com/items?itemName=RiSEResearchinSoftwareEngineering.CodeContractsforNET
 
-Efter installation you might se Code Contracts option in the project propertise 
+Efter installation you can se the Code Contracts Property Page in the project propertise 
+
 
 ![image](https://user-images.githubusercontent.com/20173643/49053309-f08c3b80-f1ef-11e8-8fba-bd99b681e39f.png)
 
