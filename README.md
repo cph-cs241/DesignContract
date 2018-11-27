@@ -6,6 +6,10 @@ Code contracts provide a way to specify preconditions, postconditions, and objec
 - postconditions
 - invariants
 
+For Code Contract installation : https://marketplace.visualstudio.com/items?itemName=RiSEResearchinSoftwareEngineering.CodeContractsforNET
+
+Efter installation you might se 
+
 In this program using C#, is there account class as we have deposit and withdraw contract methods that use Code contract. Program.cs is our main class. There are 2 opportunities to run the program, through both windows application(possibility for user input from windows form) and console application(hard code).
  
 
