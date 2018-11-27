@@ -8,7 +8,7 @@ Code contracts provide a way to specify preconditions, postconditions, and objec
 
 For Code Contract installation : https://marketplace.visualstudio.com/items?itemName=RiSEResearchinSoftwareEngineering.CodeContractsforNET
 
-> Efter installation you can se the Code Contracts Property Page in the project propertise 
+Efter installation you can se the Code Contracts Property Page in the project propertise 
 
 
 ![image](https://user-images.githubusercontent.com/20173643/49053309-f08c3b80-f1ef-11e8-8fba-bd99b681e39f.png)
@@ -17,7 +17,7 @@ For Code Contract installation : https://marketplace.visualstudio.com/items?item
 
 ![image](https://user-images.githubusercontent.com/20173643/49071665-c017c200-f22e-11e8-9827-de853d1bdb76.png)
 
-After running this program, it must show up an exeption that we have entered in the withdraw method
+> After running this program, it must show up an exeption that we have entered in the withdraw method
 
 ![image](https://user-images.githubusercontent.com/20173643/49072024-96ab6600-f22f-11e8-98a2-d58c119b438c.png)
 
