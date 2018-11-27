@@ -1,9 +1,17 @@
-# DesignContract
+# Code Contract
 
+Code contracts provide a way to specify preconditions, postconditions, and object invariants in your code. Preconditions are requirements that must be met when entering a method or property. Postconditions describe expectations at the time the method or property code exits. Object invariants describe the expected state for a class that is in a good state.
 
-There is account classe as we have deposit and withdraw contract methods. Program.cs is our main classe. There are 2 opportunities to run the program, through both windows application and console.
+- preconditions
+- postconditions
+- invariants
+
+In this program using C#, is there account class as we have deposit and withdraw contract methods that use Code contract. Program.cs is our main class. There are 2 opportunities to run the program, through both windows application(possibility for user input from windows form) and console application(hard code).
+ 
 
 # Requitment for use contract in C# 
+
+The classes for code contracts can be found in the System.Diagnostics.Contracts namespace.
 
 ```sh
 using System.Diagnostics.Contracts;
@@ -19,8 +27,9 @@ using System.Diagnostics.Contracts;
             amount += d;
         }
 ```
+- expresses preconditions by using the Contract.Requires method.
+- express standard postconditions by using the Ensures method
 
-- Requires 
 
 # Withdraw
 ```sh
