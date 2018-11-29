@@ -32,34 +32,26 @@ namespace DesignByContract
             foreach (string name in Accountcollection.Keys)
             {
                 comboBox1.Items.Add(name);
-
             }
             comboBox1.SelectedIndex = 0;
-
+            listViewUpdate(Accountcollection);
+        }
+        private void listViewUpdate (Dictionary<string, Account> Accountcollection)
+        {
             listView1.Clear();
-
-            foreach (Account name in Accountcollection.Values)
+            foreach (Account acount in Accountcollection.Values)
             {
-
-
-                listView1.Items.Add(name.ToString());
-
+                listView1.Items.Add(acount.ToString());
             }
-
         }
         private void buttonDeposit_Click(object sender, EventArgs e)
         {
             label2.Visible = false;
             if (!string.IsNullOrEmpty(textBox1.Text) && !string.IsNullOrEmpty(comboBox1.Text) && double.TryParse(textBox1.Text, out number))
             {
-
-                double amount = double.Parse(textBox1.Text);
-
-                string a = comboBox1.Text;
-                Account acount = (Account)Accountcollection[a];
-                acount.Deposit(amount);
-                Design_Load(sender, e);
-
+                Account acount = (Account)Accountcollection[comboBox1.Text];
+                acount.Deposit(double.Parse(textBox1.Text));
+                listViewUpdate(Accountcollection);
 
             }
             else
@@ -75,13 +67,9 @@ namespace DesignByContract
             label2.Visible = false;
             if (!string.IsNullOrEmpty(textBox1.Text) && !string.IsNullOrEmpty(comboBox1.Text) && double.TryParse(textBox1.Text, out number))
             {
-
-                double amount = double.Parse(textBox1.Text);
-                string a = comboBox1.Text;
-                Account acount = Accountcollection[a];
-                acount.Withdraw(amount);
-                Design_Load(sender, e);
-
+                Account acount = Accountcollection[comboBox1.Text];
+                acount.Withdraw(double.Parse(textBox1.Text));
+                listViewUpdate(Accountcollection);
             }
             else
             {

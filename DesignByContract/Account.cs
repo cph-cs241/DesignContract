@@ -24,13 +24,7 @@ namespace DesignByContract
    
         public override string ToString()
         {
-            return  " name : " + name + "; amount :" + amount.ToString() ;
-        }
-
-
-        public void setNewAmount(double amountn)
-        {
-            amount = amount + amountn;
+            return  " Name : " + name + "; \t Amount :" + amount.ToString() +"\n";
         }
 
         public void Deposit(double d)
@@ -38,8 +32,8 @@ namespace DesignByContract
             Contract.Requires(d >= 0);
             Contract.EnsuresOnThrow<Exception>(d<0);
             Contract.Ensures(Contract.OldValue(amount) + d == amount);
-          // Contract.EnsuresOnThrow<Exception>(Contract.OldValue(amount) > this.amount);           
-           // Contract.Requires<ArgumentNullException>(!string.IsNullOrEmpty(), "Exception!!");
+          //Contract.EnsuresOnThrow<Exception>(Contract.OldValue(amount) > this.amount);           
+           //Contract.Requires<ArgumentNullException>(!string.IsNullOrEmpty(), "Exception!!");
             amount += d;
         }
 
@@ -49,7 +43,7 @@ namespace DesignByContract
             Contract.Ensures(Contract.OldValue(amount) - d == amount);
             Contract.EnsuresOnThrow<Exception>(Contract.OldValue(amount) == amount);
             if (d > amount) throw new Exception();
-            amount = amount - d;
+            amount -= d;
         }
     }
     
