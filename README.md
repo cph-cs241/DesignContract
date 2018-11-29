@@ -48,6 +48,6 @@ using System.Diagnostics.Contracts;
             Contract.Ensures(Contract.OldValue(amount) - d == amount);
             Contract.EnsuresOnThrow<Exception>(Contract.OldValue(amount) == amount);
             if (d > amount) throw new Exception();
-            amount = amount - d;
+            amount-= d;
         }
 ```
